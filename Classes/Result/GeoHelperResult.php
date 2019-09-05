@@ -10,11 +10,14 @@ class GeoHelperResult
 
     public static function getObjArray($arResult)
     {
-        $objArray = array();
-        foreach ($arResult as $result) {
-            $objArray[] = self::getEntity($result);
+        if (array_key_exists("pagination", $arResult)) {
+            foreach ($arResult['result'] as $result) {
+                $objArray[] = self::getEntity($result);
+            }
+        } else {
+            $objArray[] = self::getEntity($arResult['result']);
         }
-        
+
         return $objArray;
     }
 }

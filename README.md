@@ -2,7 +2,8 @@
 - получение улиц по фильтру,
 - получение информации по телефону.
 
-Пример использования:
+Примеры использования.
+Улицы:
 ```
 require "autoload.php";
 $geo = new \Classes\Request\GeoHelperRequest('apiKey geoHelper');
@@ -17,4 +18,11 @@ try {
 }
 
 print_r($objResults);
+```
+Номер телефона:
+```
+$result = $geo->makeRequest('phone-data', array(
+    'filter[phone]' => '8800908090'
+));
+$objResults = $result->distributeResult();
 ```
