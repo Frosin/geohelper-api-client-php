@@ -14,10 +14,10 @@ class GeoHelperPhone extends GeoHelperResult
 
     public function __construct($result)
     {
-        $this->providerName = $result['providerName'];
-        $this->regionName = $result['region']['name'];
-        $this->regionCode = $result['region']['localityType']['code'];
-        $this->regionTypeName = $result['region']['localityType']['localizedNames']['ru'];
+        @$this->providerName = $result['providerName'];
+        @$this->regionName = $result['region']['name'];
+        @$this->regionCode = $result['region']['localityType']['code'];
+        @$this->regionTypeName = $result['region']['localityType']['localizedNames']['ru'];
         
         $this->numCountryCode = $result['phoneParts']['countryCode'];
         $this->numCode = $result['phoneParts']['code'];
