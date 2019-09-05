@@ -3,7 +3,7 @@
 - получение информации по телефону.
 
 Пример использования:
-
+```
 require "autoload.php";
 $geo = new \Classes\Request\GeoHelperRequest('apiKey geoHelper');
 
@@ -17,3 +17,4 @@ try {
 }
 
 print_r($objResults);
+```
