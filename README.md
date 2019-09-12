@@ -5,7 +5,7 @@
 Примеры использования.
 Улицы:
 ```
-require "autoload.php";
+require "Classes\autoload.php";
 $geo = new \Classes\Request\GeoHelperRequest('apiKey geoHelper');
 
 try {

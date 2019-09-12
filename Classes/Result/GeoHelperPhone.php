@@ -1,5 +1,5 @@
 <?php
-namespace Classes\Result;
+namespace Result;
 
 class GeoHelperPhone extends GeoHelperResult
 {
