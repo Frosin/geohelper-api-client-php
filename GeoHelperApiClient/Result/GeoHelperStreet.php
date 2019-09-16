@@ -1,5 +1,7 @@
 <?php
-namespace Result;
+namespace GeoHelperApiClient\Result;
+
+use GeoHelperApiClient\Result\GeoHelperResult;
 
 class GeoHelperStreet extends GeoHelperResult
 {

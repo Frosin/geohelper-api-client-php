@@ -1,5 +1,5 @@
 <?php
-namespace Result;
+namespace GeoHelperApiClient\Result;
 
 class GeoHelperResult
 {

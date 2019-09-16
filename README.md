@@ -5,8 +5,11 @@
 Примеры использования.
 Улицы:
 ```
-require "Classes\autoload.php";
-$geo = new \Classes\Request\GeoHelperRequest('apiKey geoHelper');
+use GeoHelperApiClient\Request\GeoHelperRequest;
+
+require __DIR__ . "/vendor/autoload.php";
+
+$geo = new GeoHelperRequest('apiKey geoHelper');
 
 try {
     $result = $geo->makeRequest('streets', array(

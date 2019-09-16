@@ -1,5 +1,8 @@
 <?php
-namespace Request;
+namespace GeoHelperApiClient\Request;
+
+use GeoHelperApiClient\Result\GeoHelperPhone;
+use GeoHelperApiClient\Result\GeoHelperStreet;
 
 class GeoHelperRequest
 {
@@ -63,10 +66,10 @@ class GeoHelperRequest
 
         switch ($this->method) {
             case "streets":
-                $geoResults = \Result\GeoHelperStreet::getObjArray($this->result);
+                $geoResults = GeoHelperStreet::getObjArray($this->result);
                 break;
             case "phone-data":
-                $geoResults = \Result\GeoHelperPhone::getObjArray($this->result);
+                $geoResults = GeoHelperPhone::getObjArray($this->result);
                 break;
             default:
                 throw new \Exception("Unknown type of method.", 3);

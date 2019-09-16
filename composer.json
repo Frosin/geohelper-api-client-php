@@ -1,0 +1,11 @@
+{
+    "name": "frosin/geohelper-api-client-php",
+    "description": "PHP api client for GeoHelper service",
+    "type": "library",
+    "license": "free",
+    "minimum-stability": "alpha",
+    "require": {},
+    "autoload": {
+        "psr-0": { "GeoHelperApiClient\\": "" }
+    }
+}
